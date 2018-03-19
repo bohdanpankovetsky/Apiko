@@ -9,7 +9,7 @@ fetch('https://jsonplaceholder.typicode.com/posts/')
 	  out+=`<div class="styling">`;
 	  out+=`<h5><a">${json[key].title}</a></h5>`;
 	  out+='<br>';
-	  out+=`<button class="link" data-link="${json[key].id}" href="/?postId=${json[key].id}">Details</button>`;
+	  out+=`<button class="link" data-link="${json[key].id}">Details</button>`;
 	  out+='</div>';
 	  out+='<br>';
 	  posting.innerHTML = out;
